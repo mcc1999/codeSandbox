@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'antd/dist/antd.variable.min.css';
+
+import ModalComponent from './components/1-modal-loading';
+import AspectRadio from './components/0-aspect-radio';
+import MultiVideoSoundsControl from './components/2-rxjs-multi-video-sounds-control';
+import FormGetFieldValues from './components/3-form-getFieldValue/index';
+import RefPass1 from './components/4-parent-child-pass-ref/pass-by-event';
+import MergeOperator from './components/4-parent-child-pass-ref/merge-operator-test';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RefPass1 />
   </React.StrictMode>,
   document.getElementById('root')
 );
